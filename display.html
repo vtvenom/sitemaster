@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Content OF Esl</title>
+	
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+		body {
+			size: 40%;
+			background-image: url('esl.jpg');
+			font-family: 'Quicksand', sans-serif;
+		}
+		.neon
+		{
+			position: absolute;
+			top: 15%;
+			left: 25%;
+			transform: translate(-50%,-50%);
+			margin: 0;
+			padding: 0 20px ;
+			font-size: 3em;
+			color: #fff;
+			text-shadow: 0 0 20px #ff009b;
+
+		}
+		.neon:after
+		{
+			content: attr(data-text);
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 0 20px;
+			z-index: -1;
+			color: #ff001b ;
+			filter: blur(15px);
+		}
+		.neon:before
+		{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #fe3a40;
+			z-index: -2;
+			opacity: .5;
+			filter: blur(40px);
+		}
+		.vid1 {
+			position: absolute;
+			top: 20%;
+			left: 8%;
+		}
+		.vid2 {
+			position: absolute;
+			top: 80%;
+			left: 8%;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1 class="neon" data-text="[Content OF ESL]">[Content OF ESL]</h1>
+	
+	<video class="vid1" width="720" height="440" controls>
+  		<source src="ESL.mp4" type="video/mp4">
+  		<source src="ESL.ogg" type="video/ogg">.
+	</video>
+
+	<video class="vid2" width="720" height="440" controls>
+  		<source src="FaZe.mp4" type="video/mp4">
+  		<source src="FaZe.ogg" type="video/ogg">.
+	</video>
+
+</body>
+</html>
